@@ -14,6 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/invoice', function() {
+//     return response()->json([
+//         'invoice' => [
+//             [
+//                 'invoice_number' => 12,
+//                 'invoice_ammount' => 432.43
+//             ]
+//         ]
+//             ]);
+// });
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
